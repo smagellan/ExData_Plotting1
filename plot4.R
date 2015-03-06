@@ -12,3 +12,7 @@ with(dataForPlot, {
     plot(datetime, Voltage, type = 'l');
     plot(datetime, Global_reactive_power, type = 'l');
 });
+mtext("Plot 4", outer =  TRUE, cex = 2, adj = 0);
+
+dev.copy(png, file = "plot4.png");
+dev.off();
